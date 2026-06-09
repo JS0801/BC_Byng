@@ -635,11 +635,19 @@ define(['N/record', 'N/runtime', 'N/search'],
                     sublistId: 'inventoryassignment',
                     line: iaCtr
                 });
+                if (binNumber)
                 inventoryDetailSubrecord.setSublistValue({
                     sublistId: 'inventoryassignment',
                     fieldId: 'binnumber',
                     line: iaCtr,
                     value: binNumber
+                });
+
+                inventoryDetailSubrecord.setSublistText({
+                    sublistId: 'inventoryassignment',
+                    fieldId: 'inventorystatus',
+                    line: iaCtr,
+                    text: 'Good / Available'
                 });
                 inventoryDetailSubrecord.setSublistValue({
                     sublistId: 'inventoryassignment',
