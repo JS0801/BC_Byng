@@ -70,7 +70,7 @@ define(['N/record', 'N/runtime', 'N/search'],
                         projectRecordId: projectRecordId,
                         kitItemId: kitItemId
                     });
-                    return;
+                  //  return;
                 }
 
                 taskIds = getProjectKitTaskIds(projectRecordId, kitItemId);
